@@ -7,12 +7,7 @@ import contact from "./router/contactRouter";
 
 export const myApp = async (app: Application) => {
   app.use(express.json());
-  app.use(
-    cors({
-      origin: ["*"],
-      methods: ["POST", "GET", "DELETE", "PATCH"],
-    })
-  );
+  app.use(cors());
   app.use(morgan("dev"));
   app.use(helmet());
 
