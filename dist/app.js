@@ -22,7 +22,7 @@ const contactRouter_1 = __importDefault(require("./router/contactRouter"));
 const myApp = (app) => __awaiter(void 0, void 0, void 0, function* () {
     app.use(express_1.default.json());
     app.use((0, cors_1.default)({
-        origin: ["*", "http://localhost:5173"],
+        origin: ["*"],
         methods: ["POST", "GET", "DELETE", "PATCH"],
     }));
     app.use((0, morgan_1.default)("dev"));

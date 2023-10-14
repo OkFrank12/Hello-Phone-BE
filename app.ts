@@ -9,7 +9,7 @@ export const myApp = async (app: Application) => {
   app.use(express.json());
   app.use(
     cors({
-      origin: ["*", "http://localhost:5173"],
+      origin: ["*"],
       methods: ["POST", "GET", "DELETE", "PATCH"],
     })
   );
